@@ -131,7 +131,7 @@ select{
   border:none;
 }
 
-input::placeholder{
+input[placeholder]{
   text-align:right;
   font-size:.8em;
   opacity:0.5;
@@ -150,6 +150,7 @@ textarea:focus{
   background:#f0ebff;
   color:#000;
   transition:background 1s;
+  text-align:left;
 }
 
 button{
