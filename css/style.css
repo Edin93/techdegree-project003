@@ -1,0 +1,200 @@
+/* -----------------------
+ Basic styling
+-------------------------- */
+* {
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Merriweather', serif;
+  font-weight:400;
+  color:#0c151a;
+  background-color:#f5f5f5;
+  line-height: 1.3em;
+}
+
+/* ---------- header and form head ---------- */
+header{
+  text-align: center;
+  background:#171837;
+}
+
+header h1{
+  color:#f8f8ff;
+  font-weight:600;
+  font-size:1.1em;
+  padding:1.2em 0;
+  margin-top:0;
+}
+
+.form-header h2{
+  padding:1.5em 0 .4em;
+  font-size:1.2em;
+  text-align: center;
+}
+
+.form-header{
+  padding-bottom: 1.5em;
+  border-bottom: #171837 5px solid;
+  margin-bottom:3px;
+}
+
+/* ---------- container ---------- */
+p{
+  font-size:.875em;
+  color:#7598b0;
+  text-align: center;
+}
+
+.container{
+  text-align: center;
+  margin:0 auto;
+  padding:0 1em;
+  max-width: 650px;
+}
+
+/* ---------- form ---------- */
+
+form{
+  text-align: left;
+  font-size: 1.1em;
+  color:#036181;
+}
+
+fieldset{
+  position:relative;
+  border:none;
+  border-top:2px solid #171837;
+  padding-top:55px;
+  line-height: 1.4em;
+}
+
+legend{
+  position:absolute;
+  top:20px;
+  left:15px;
+  font-weight:bold;
+  margin-bottom:.5em;
+}
+
+label{
+  display:block;
+  margin:5px;
+}
+
+label.news{
+  display:inline;
+}
+
+textarea{
+  resize:none;
+  height:150px;
+  width:100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+  border-radius:8px;
+  height:58px;
+  width:100%;
+  padding: 18px;
+  margin:5px 0;
+  background:#e1e1e1;
+  border:none;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  margin: 15px 20px 2px;
+}
+
+input[id="zip"]{
+  width:50%;
+}
+
+fieldset:nth-of-type(1){
+  padding-bottom:20px;
+}
+
+fieldset:nth-of-type(2) label{
+   margin-top: 20px;
+}
+
+select{
+  border-radius:8px;
+  height:58px;
+  width:100%;
+  margin:5px 0;
+  background:#e1e1e1;
+  border:none;
+}
+
+input::placeholder{
+  text-align:right;
+  font-size:.8em;
+  opacity:0.5;
+  padding:0 10px;
+  font-style: italic;
+}
+
+textarea[placeholder]{
+  padding:8px 15px 10px;
+}
+
+input:focus,
+textarea:focus{
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+  background:#f0ebff;
+  color:#000;
+  transition:background 1s;
+}
+
+button{
+  width:100%;
+  height:60px;
+  font-size:1.4em;
+  font-weight:500;
+  margin:25px 0;
+  border:none;
+  border-radius:12px;
+  color:white;
+  background: #35C0B2;
+  cursor:pointer;
+}
+
+
+/* ---------- footer ---------- */
+footer{
+  font-style:italic;
+  margin: 1em;
+}
+
+/* -----------------------
+ Media Queries
+-------------------------- */
+@media (min-width:769px){
+
+fieldset:first-of-type label{
+  display:block;
+  float:left;
+  clear:both;
+  width:30%;
+  padding:15px 0 0;
+  margin:5px 28px 0 0;
+}
+
+fieldset:first-of-type input,
+fieldset:first-of-type select{
+  float:right;
+  width:65%;
+}
+
+fieldset:first-of-type input[id="zip"]{
+  max-width: 40%;
+  float:left;
+}
+
+}
